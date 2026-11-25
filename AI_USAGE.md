@@ -4,25 +4,31 @@
 
 - Gemini (AI assistant)
 
+## Conversation links
+
+- Link 1: https://gemini.google.com/app/0a625761671559ee
+
 ## What I used them for
 
-- Checking specific logic details, edge cases, and error handling across the modules
-- Running through CLI commands, running the public test suite in GitHub Codespaces, and verifying repository layout before pushing
+- Checking errors and debugging issues across the project files
+- Generating small code snippets and boilerplate examples to understand patterns and structure
+- Explaining logic, edge cases, CLI argument handling, and logging behavior so I could understand how the code works
 
 ## Which parts of the code were AI-generated or substantially AI-assisted
 
 | File | Function or part | How (generated / modified / explained) |
 | --- | --- | --- |
-| `validator.py` | Validation and record formatting logic | Explained and reviewed |
-| `csv_loader.py` | `parse_files` | Reviewed |
-| `query.py` | Query filtering, sorting, and limit logic | Explained and reviewed |
-| `flight_parser.py` | CLI flags, logging, and file handling | Reviewed |
+| `validator.py` | Validation and record formatting logic | Explained, reviewed, and modified |
+| `csv_loader.py` | `parse_files` | Generated snippets, explained, and modified |
+| `query.py` | Query filtering, sorting, and limit logic | Explained, reviewed, and modified |
+| `flight_parser.py` | CLI flags, logging, and file handling | Generated reference code, explained, and modified |
 
 ## Key prompts
 
-1. Asked quick questions to double-check validation rules, CSV/query behavior, and CLI edge cases.
-2. Checked commands for running the public tests and verifying the GitHub repository structure before submission.
+1. Asked for help checking errors, understanding logic/edge cases, and generating small code examples to see how parts work.
+2. Asked for a reference structure for `flight_parser.py` covering `argparse`, `errors.log` setup/teardown, and exit codes (`0`, `1`, `2`), and reviewed how it fits the assignment.
+3. Checked commands for running the public test suite and verifying repository files before pushing.
 
 ## What I changed or verified myself
 
-I wrote and adjusted the project files, added them to my GitHub repository, pulled them into GitHub Codespaces, ran `python3 tests/run_public_tests.py` (passing all 29 public tests), tested CLI exit codes manually, and verified the required files and student constants (`STUDENT_ID`, `FIRST_NAME`, `LAST_NAME`) before committing and pushing.
+I reviewed the generated snippets and explanations to make sure I understood how each part works, adapted and integrated the changes into the project files, updated my student details (`STUDENT_ID`, `FIRST_NAME`, `LAST_NAME`), ran `python3 tests/run_public_tests.py` (passing all 29 public tests), tested CLI exit codes manually, and verified the repository before committing and pushing.
