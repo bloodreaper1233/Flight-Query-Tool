@@ -2,7 +2,7 @@
 
 ## Tools used
 
-- Gemini (AI assistant)
+- Gemini 
 
 ## Conversation links
 
